@@ -1,27 +1,39 @@
-import { useState, useEffect } from "react";
-
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  // aplicar a classe 'dark' ao html
-  useEffect(() => {
-    const html = document.documentElement;
-    if (darkMode) html.classList.add("dark");
-    else html.classList.remove("dark");
-  }, [darkMode]);
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-gray-900/80 dark:bg-black/50 backdrop-blur-md border-b border-gray-800 dark:border-gray-700 px-8 py-4 flex justify-between items-center">
-      <h1 className="text-xl font-semibold text-white tracking-wide">
+    <nav
+      className="
+        fixed top-0 left-0 w-full z-50
+        bg-black/40 backdrop-blur-md
+        border-b border-gray-800
+        px-10 py-4
+        flex items-center justify-between
+      "
+    >
+      {/* LOGO */}
+      <h1 className="text-white text-lg font-semibold tracking-wide">
         Susana Tavares
       </h1>
 
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="text-white text-2xl"
-      >
-        {darkMode ? "☀️" : "🌙"}
-      </button>
+      {/* MENU */}
+      <div className="hidden md:flex gap-10 text-gray-300 text-sm font-medium">
+        <button onClick={() => scrollTo("home")} className="hover:text-white transition">
+          Home
+        </button>
+        <button onClick={() => scrollTo("sobre")} className="hover:text-white transition">
+          Sobre
+        </button>
+        <button onClick={() => scrollTo("projetos")} className="hover:text-white transition">
+          Projetos
+        </button>
+        <button onClick={() => scrollTo("contacto")} className="hover:text-white transition">
+          Contacto
+        </button>
+      </div>
     </nav>
   );
 }
