@@ -1,3 +1,4 @@
+import "./Projects.css";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -8,11 +9,11 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-32 bg-gray-900 dark:bg-black text-white px-8">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-semibold mb-12">Projetos</h2>
+    <section className="projects" id="projects">
+      <div className="projects-container">
+        <h2>Projects</h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="projects-grid">
           {projects.map((p, i) => (
             <motion.div
               key={i}
@@ -20,10 +21,10 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2, duration: 0.8 }}
-              className="bg-gray-800 dark:bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-white transition group cursor-pointer"
+              className="project-card"
             >
-              <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
-              <p className="text-gray-400">{p.desc}</p>
+              <h3>{p.title}</h3>
+              <p>{p.desc}</p>
             </motion.div>
           ))}
         </div>
