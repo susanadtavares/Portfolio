@@ -7,9 +7,9 @@ export default function Navbar() {
 
       <div className="menu">
         <a href="#home">Home</a>
-        <a href="#sobre">About</a>
-        <a href="#projetos">Projects</a>
-        <a href="#contacto">Contacts</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );

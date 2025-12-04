@@ -2,9 +2,9 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 
 const projects = [
-  { title: "Projeto 1", desc: "Descrição do projeto 1." },
-  { title: "Projeto 2", desc: "Descrição do projeto 2." },
-  { title: "Projeto 3", desc: "Descrição do projeto 3." },
+  { title: "Project A", desc: "" },
+  { title: "Project B", desc: "" },
+  { title: "Project C", desc: "" },
 ];
 
 export default function Projects() {
