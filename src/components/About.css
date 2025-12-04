@@ -1,22 +1,39 @@
 .about {
   padding: 120px 20px;
-  min-height: 50vh;
-  text-align: center;
+  min-height: 60vh;
 }
 
-.about-content {
-  max-width: 800px;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.about h2 {
+.about-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #333;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-.about p {
+.about-text p {
   color: #c7c7c7;
   line-height: 1.6;
   font-size: 18px;
-  margin-top: 10px;
+  text-align: left;
 }
