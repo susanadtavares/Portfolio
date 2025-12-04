@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -11,19 +12,38 @@ export default function Contact() {
         transition={{ duration: 1 }}
         className="contact-title"
       >
-        Contact
+        Contact me
       </motion.h2>
 
-      <motion.a
-        href="mailto:susana15tavares@hotmail.com"
+      <motion.p
+        className="contact-text"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        If you have any questions or would like to get in touch, feel free to reach out!
+      </motion.p>
+
+      <motion.div
+        className="contact-icons"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="contact-button"
       >
-        Send me an email ✉️
-      </motion.a>
+        <a href="https://www.linkedin.com/in/susanadtavares" target="_blank">
+          <FaLinkedin />
+        </a>
+
+        <a href="https://github.com/susanadtavares" target="_blank">
+          <FaGithub />
+        </a>
+
+        <a href="mailto:susana15tavares@hotmail.com">
+          <FaEnvelope />
+        </a>
+      </motion.div>
     </section>
   );
 }

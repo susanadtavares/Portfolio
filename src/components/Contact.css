@@ -1,25 +1,33 @@
 .contact {
   padding: 120px 20px;
   text-align: center;
-  min-height: 40vh;
 }
 
 .contact-title {
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.contact-button {
-  display: inline-block;
-  padding: 14px 28px;
-  background: white;
-  color: black;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+.contact-text {
+  color: #c7c7c7;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  color: white;
+  font-size: 32px;
   transition: 0.3s ease;
 }
 
-.contact-button:hover {
-  background: #dcdcdc;
+.contact-icons a:hover {
+  transform: translateY(-5px);
+  color: #b3b3b3;
 }
