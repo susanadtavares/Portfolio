@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const projects = [
   { title: "Personal Finance Tracker", desc: "In progress..." },
   { title: "School Management", desc: "In progress..." },
-  { title: "Project C", desc: "" },
+  { title: "BMFMJ", desc: "In progress..." },
 ];
 
 export default function Projects() {
