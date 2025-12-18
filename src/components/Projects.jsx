@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const projects = [
   { title: "Personal Finance Tracker", desc: "In progress..." },
-  { title: "Project B", desc: "" },
+  { title: "School Management", desc: "In progress..." },
   { title: "Project C", desc: "" },
 ];
 
