@@ -2,7 +2,7 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 
 const projects = [
-  { title: "Project A", desc: "" },
+  { title: "Personal Finance Tracker", desc: "In progress..." },
   { title: "Project B", desc: "" },
   { title: "Project C", desc: "" },
 ];
