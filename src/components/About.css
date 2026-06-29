@@ -1,40 +1,54 @@
 .about {
-  padding: 120px 20px;
-  min-height: 60vh;
-}
-
-.about-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  max-width: 1100px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  padding: clamp(5rem, 9vw, 7rem) 0 clamp(1rem, 2vw, 1.5rem);
 }
-
-.about-image img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
 
 .about-text {
-  max-width: 500px;
+  width: 100%;
+  padding: clamp(1.6rem, 3vw, 2.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
 }
 
 .about-text h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  text-align: left;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  margin-bottom: 1.2rem;
 }
 
 .about-text p {
-  color: #c7c7c7;
-  line-height: 1.6;
-  font-size: 18px;
-  text-align: left;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
+
+.skills-heading {
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  margin: 1.8rem 0 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+}
+
+.skill-chip {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(26, 211, 164, 0.12);
+  border: 1px solid rgba(26, 211, 164, 0.4);
+  color: #a9f7e0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+

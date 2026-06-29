@@ -2,9 +2,9 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 
 const projects = [
-  { title: "Personal Finance Tracker", desc: "In progress..." },
-  { title: "School Management", desc: "In progress..." },
-  { title: "BMFMJ", desc: "In progress..." },
+  { title: "Personal Finance Tracker", desc: "In progress...", stack: "React + Node" },
+  { title: "School Management", desc: "In progress...", stack: "Java + SQL" },
+  { title: "BMFMJ", desc: "In progress...", stack: "Web Platform" },
 ];
 
 export default function Projects() {
@@ -23,8 +23,13 @@ export default function Projects() {
               transition={{ delay: i * 0.2, duration: 0.8 }}
               className="project-card"
             >
+              <div className="project-image">
+                {/* Placeholder 16:9 — substituir por <img src={...} alt={p.title} /> */}
+                <span>16:9</span>
+              </div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
+              <span className="project-stack">{p.stack}</span>
             </motion.div>
           ))}
         </div>

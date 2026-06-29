@@ -1,33 +1,45 @@
 .contact {
-  padding: 120px 20px;
+  padding: clamp(4rem, 8vw, 6.4rem) 0;
   text-align: center;
 }
 
 .contact-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.8rem, 4.2vw, 2.5rem);
+  margin-bottom: 1rem;
 }
 
 .contact-text {
-  color: #c7c7c7;
-  font-size: 18px;
-  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  margin: 0 auto 2rem;
+  white-space: nowrap;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
 }
 
 .contact-icons a {
-  color: white;
-  font-size: 32px;
-  transition: 0.3s ease;
+  color: #d9f5ff;
+  font-size: 1.8rem;
+  display: grid;
+  place-items: center;
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .contact-icons a:hover {
-  transform: translateY(-5px);
-  color: #b3b3b3;
+  transform: translateY(-4px);
+  color: var(--accent-strong);
+}
+
+@media (max-width: 768px) {
+  .contact-text {
+    white-space: normal;
+    max-width: 620px;
+  }
 }

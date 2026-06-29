@@ -32,11 +32,11 @@ export default function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <a href="https://www.linkedin.com/in/susanadtavares" target="_blank">
+        <a href="https://www.linkedin.com/in/susanadtavares" target="_blank" rel="noreferrer">
           <FaLinkedin />
         </a>
 
-        <a href="https://github.com/susanadtavares" target="_blank">
+        <a href="https://github.com/susanadtavares" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
 

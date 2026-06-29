@@ -1,13 +1,85 @@
-/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap");
+
+:root {
+  --bg: #07101a;
+  --surface: rgba(9, 29, 43, 0.62);
+  --surface-solid: #0d2434;
+  --card: rgba(13, 36, 52, 0.88);
+  --line: rgba(156, 201, 214, 0.24);
+  --text: #f4fbff;
+  --muted: #afcad5;
+  --accent: #1fc7b5;
+  --accent-strong: #1ad3a4;
+  --shadow: 0 20px 45px rgba(2, 11, 19, 0.45);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body default */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #1a1a1a;
-  color: white;
-  font-family: system-ui;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(31, 199, 181, 0.3), transparent 38%),
+    radial-gradient(circle at 92% 22%, rgba(40, 149, 255, 0.24), transparent 35%),
+    linear-gradient(145deg, #06131f 0%, #081928 43%, #0d1f2d 100%);
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  isolation: isolate;
+}
+
+.site-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-shell::before,
+.site-shell::after {
+  content: "";
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.site-shell::before {
+  top: -110px;
+  left: -80px;
+  background: rgba(31, 199, 181, 0.22);
+}
+
+.site-shell::after {
+  right: -100px;
+  bottom: 50px;
+  background: rgba(39, 120, 248, 0.2);
+}
+
+section {
+  width: min(1120px, calc(100% - 2.5rem));
+  margin: 0 auto;
 }

@@ -1,21 +1,34 @@
 import "./Hero.css";
-import bgVideo from "../assets/background.mp4";
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import profile from "../assets/susana.jpg";
 
 export default function Hero() {
   return (
     <section className="hero" id="home">
-
-      {/* Background video */}
-      <video autoPlay muted loop playsInline className="hero-video">
-        <source src={bgVideo} type="video/mp4" />
-      </video>
-
-      {/* Content above the video */}
-      <div className="hero-content">
-        <h1>Creating. Learning. Improving.</h1>
-        <p>Welcome! Glad you're here.</p>
-      </div>
-
+      <motion.div
+        className="hero-content"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9 }}
+      >
+        <div className="hero-photo">
+          <img src={profile} alt="Susana Tavares" />
+        </div>
+        <h1>Susana Tavares</h1>
+        <p className="hero-title">Software Engineer</p>
+        <p className="hero-location">
+          <FaMapMarkerAlt /> Porto, Portugal
+        </p>
+        <a
+          href="/cv.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="cv-button"
+        >
+          View CV
+        </a>
+      </motion.div>
     </section>
   );
 }

@@ -9,14 +9,18 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Susana Tavares</h1>
+      <h1 className="logo">ST | Portfolio</h1>
 
-      {/* Hamburger Button */}
-      <div className={`hamburger ${open ? "open" : ""}`} onClick={toggleMenu}>
+      <button
+        className={`hamburger ${open ? "open" : ""}`}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+        aria-expanded={open}
+      >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
       {/* Desktop + Mobile Menu */}
       <div className={`menu ${open ? "open" : ""}`}>
