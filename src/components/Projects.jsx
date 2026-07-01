@@ -1,14 +1,26 @@
 import "./Projects.css";
 import { motion } from "framer-motion";
+import emmjaImage from "../assets/EMMJA.png";
+import bmfmjImage from "../assets/BMFMJ.png";
 
 const projects = [
-  { title: "Personal Finance Tracker", desc: "In progress...", stack: "React + Node" },
-  { title: "School Management", desc: "In progress...", stack: "Java + SQL" },
+  { 
+    title: "School Management", 
+    desc: "In progress...", 
+    stack: "Java + SQL",
+    image: emmjaImage,
+  },
   {
-    title: "BMFMJ",
-    desc: "In progress...",
-    stack: "Web Platform",
+    title: "Banda Junqueirense",
+    desc: "Instituional Website",
+    stack: "React + Vite + TailwindCSS",
     url: "https://bandajunqueirense.vercel.app/",
+    image: bmfmjImage,
+  },
+    { 
+    title: "Personal Finance Tracker", 
+    desc: "In progress...", 
+    stack: "React + Node" 
   },
 ];
 
@@ -35,8 +47,11 @@ export default function Projects() {
                 className="project-card"
               >
                 <div className="project-image">
-                  {/* Placeholder 16:9 — substituir por <img src={...} alt={p.title} /> */}
-                  <span>16:9</span>
+                  {p.image ? (
+                    <img src={p.image} alt={`${p.title} project`} />
+                  ) : (
+                    <span>16:9</span>
+                  )}
                 </div>
                 <h3>{p.title}</h3>
                 <p>{p.desc}</p>
