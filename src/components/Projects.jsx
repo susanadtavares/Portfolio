@@ -5,9 +5,10 @@ import bmfmjImage from "../assets/BMFMJ.png";
 
 const projects = [
   { 
-    title: "School Management", 
-    desc: "In progress...", 
-    stack: "Java + SQL",
+    title: "EMMJA", 
+    desc: "Music school management system", 
+    stack: "React + Vite + Node.js + Express + PostgreSQL + Sequelize",
+    url: "https://emmja.vercel.app/",
     image: emmjaImage,
   },
   {
@@ -50,7 +51,7 @@ export default function Projects() {
                   {p.image ? (
                     <img src={p.image} alt={`${p.title} project`} />
                   ) : (
-                    <span>16:9</span>
+                    <span>...</span>
                   )}
                 </div>
                 <h3>{p.title}</h3>
