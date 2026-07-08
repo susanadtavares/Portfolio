@@ -21,7 +21,7 @@ export default function Hero() {
           <FaMapMarkerAlt /> Porto, Portugal
         </p>
         <a
-          href="/cv.pdf"
+          href="https://drive.google.com/file/d/1Z-BkXFdqRszrncv-rG8Gv-t9Kz-r4ac-/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="cv-button"
