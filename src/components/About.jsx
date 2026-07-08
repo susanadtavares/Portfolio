@@ -27,12 +27,11 @@ export default function About() {
       >
         <h2>About Me</h2>
         <p>
-          Final-year Software Engineering student with hands-on experience
-          developing and validating software for space systems following ECSS
-          standards. Passionate about software engineering, distributed systems
-          and high-reliability software, with a strong interest in building
-          robust solutions through testing, validation and modern development
-          practices.
+          Recently graduated Software Engineer with experience validating
+          space-industry software and building diverse full-stack projects.
+          Combines strong technical fundamentals with communication and teaching
+          skills developed over years as a music instructor. Motivated to bring
+          adaptability and a collaborative mindset to a growing engineering team.
         </p>
 
         <h3 className="skills-heading">Skills</h3>
