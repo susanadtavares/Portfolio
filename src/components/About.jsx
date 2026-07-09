@@ -27,11 +27,9 @@ export default function About() {
       >
         <h2>About Me</h2>
         <p>
-          Recently graduated Software Engineer with experience validating
-          space-industry software and building diverse full-stack projects.
-          Combines strong technical fundamentals with communication and teaching
-          skills developed over years as a music instructor. Motivated to bring
-          adaptability and a collaborative mindset to a growing engineering team.
+        Recently graduated Software Engineer with experience in software validation and full-stack development. 
+        Quick learner with strong problem-solving skills, comfortable adapting to new technologies and challenges. 
+        Motivated to bring a collaborative mindset to a growing engineering team.
         </p>
 
         <h3 className="skills-heading">Skills</h3>
